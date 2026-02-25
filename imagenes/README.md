@@ -1,1 +1,0 @@
-Fotos de las casitas

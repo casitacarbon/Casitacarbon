@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -14,653 +15,659 @@
             background: #ffffff;
             min-height: 100vh;
         }
-        
-        /* PÁGINA DE SELECCIÓN */
-        .selector-page { display: block; }
-        .selector-page.oculto { display: none; }
-        
-        .hero-image {
-            width: 100%;
-            height: 60vh;
-            min-height: 400px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        
-        .casas-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .casa-card {
-            background: #ffffff;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid #f0f0f0;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .casa-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-        }
-        .casa-img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            background: #f5f5f5;
-            background-size: cover;
-            background-position: center;
-        }
-        .casa-info {
-            padding: 30px;
-            text-align: center;
-        }
-        .casa-info h2 {
-            font-size: 1.8em;
-            color: #1a1a1a;
-            margin-bottom: 20px;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-        }
-        .btn-reservar {
-            background: #1a1a1a;
-            color: white;
-            border: none;
-            padding: 16px 48px;
-            border-radius: 50px;
-            font-size: 1.05em;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
-        }
-        .btn-reservar:hover {
-            background: #333;
-            transform: scale(1.05);
-        }
 
-        /* PÁGINA DE CALENDARIO */
-        .calendario-page { display: none; }
-        .calendario-page.activo { display: block; }
-        
-        .calendario-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
+```
+    /* PÁGINA DE SELECCIÓN */
+    .selector-page { display: block; }
+    .selector-page.oculto { display: none; }
+    
+    .hero-image {
+        width: 100%;
+        height: 60vh;
+        min-height: 400px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .casas-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    
+    .casa-card {
+        background: #ffffff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid #f0f0f0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .casa-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    }
+    .casa-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        background: #f5f5f5;
+        background-size: cover;
+        background-position: center;
+    }
+    .casa-info {
+        padding: 30px;
+        text-align: center;
+    }
+    .casa-info h2 {
+        font-size: 1.8em;
+        color: #1a1a1a;
+        margin-bottom: 20px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+    }
+    .btn-reservar {
+        background: #1a1a1a;
+        color: white;
+        border: none;
+        padding: 16px 48px;
+        border-radius: 50px;
+        font-size: 1.05em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'Inter', sans-serif;
+    }
+    .btn-reservar:hover {
+        background: #333;
+        transform: scale(1.05);
+    }
+
+    /* PÁGINA DE CALENDARIO */
+    .calendario-page { display: none; }
+    .calendario-page.activo { display: block; }
+    
+    .calendario-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .btn-volver {
+        background: #f5f5f5;
+        color: #1a1a1a;
+        border: 1px solid #e0e0e0;
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-size: 0.95em;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+        font-family: 'Inter', sans-serif;
+    }
+    .btn-volver:hover {
+        background: #e8e8e8;
+        transform: translateY(-2px);
+    }
+    
+    .calendario-card {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        border: 1px solid #f0f0f0;
+    }
+    .calendario-header {
+        text-align: center;
+        margin-bottom: 24px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #f0f0f0;
+    }
+    .calendario-header h2 {
+        color: #1a1a1a;
+        font-size: 2em;
+        margin-bottom: 8px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+    }
+    
+    .mes-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 12px;
+    }
+    .mes-nav button {
+        background: #1a1a1a;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 0.9em;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        font-family: 'Inter', sans-serif;
+        flex-shrink: 0;
+    }
+    .mes-nav button:hover {
+        background: #333;
+    }
+    .mes-titulo {
+        font-size: 1.4em;
+        font-weight: 600;
+        color: #1a1a1a;
+        text-align: center;
+        letter-spacing: -0.02em;
+    }
+    
+    .dias-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 8px;
+        margin-top: 20px;
+    }
+    .dia-header {
+        text-align: center;
+        font-weight: 600;
+        padding: 10px 4px;
+        background: #1a1a1a;
+        color: white;
+        border-radius: 8px;
+        font-size: 0.8em;
+        letter-spacing: 0.02em;
+    }
+    .dia {
+        text-align: center;
+        padding: 12px 4px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        cursor: pointer;
+        min-height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.2s ease;
+        background: #ffffff;
+    }
+    .dia.disponible {
+        background: #f5f5f5;
+        border-color: #1a1a1a;
+    }
+    .dia.disponible:hover {
+        background: #e8e8e8;
+        transform: scale(1.05);
+        border-width: 3px;
+    }
+    .dia.ocupado {
+        background: #ffebee;
+        border-color: #ef5350;
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+    .dia.pasado {
+        background: #fafafa;
+        color: #bdbdbd;
+        cursor: not-allowed;
+        border-color: #f0f0f0;
+    }
+    .dia.seleccionado {
+        background: #1a1a1a !important;
+        color: white !important;
+        border-color: #000 !important;
+        border-width: 3px !important;
+        font-weight: 600;
+    }
+    .dia-numero {
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 3px;
+    }
+    .dia-estado {
+        font-size: 0.65em;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+    }
+    
+    .leyenda {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .leyenda-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.85em;
+        font-weight: 500;
+        color: #666;
+    }
+    .color-box {
+        width: 22px;
+        height: 22px;
+        border-radius: 5px;
+        border: 2px solid #e0e0e0;
+    }
+    
+    .instruccion-seleccion {
+        text-align: center;
+        padding: 14px;
+        background: #f5f5f5;
+        border-radius: 10px;
+        margin: 20px 0;
+        font-size: 0.9em;
+        color: #666;
+        font-weight: 500;
+        border: 1px solid #e0e0e0;
+    }
+    
+    .fechas-seleccionadas-container {
+        display: none;
+        margin: 24px 0;
+    }
+    .fechas-seleccionadas-container.mostrar {
+        display: block;
+    }
+    .fechas-seleccionadas {
+        text-align: center;
+        font-size: 1.2em;
+        color: #1a1a1a;
+        font-weight: 600;
+        background: #f5f5f5;
+        padding: 18px;
+        border-radius: 12px;
+        margin-bottom: 16px;
+        letter-spacing: -0.01em;
+        border: 2px solid #e0e0e0;
+    }
+    .btn-limpiar {
+        background: #ffffff;
+        color: #666;
+        border: 2px solid #e0e0e0;
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-size: 0.9em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'Inter', sans-serif;
+        display: block;
+        margin: 0 auto 16px;
+    }
+    .btn-limpiar:hover {
+        background: #f5f5f5;
+        border-color: #999;
+    }
+    
+    .boton-whatsapp {
+        background: #25D366;
+        color: white;
+        border: none;
+        padding: 16px 40px;
+        font-size: 1.15em;
+        border-radius: 50px;
+        cursor: pointer;
+        display: none;
+        margin: 0 auto;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        font-family: 'Inter', sans-serif;
+    }
+    .boton-whatsapp:hover {
+        background: #20ba5a;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    }
+    .boton-whatsapp.mostrar { display: block; }
+    
+    /* OPTIMIZACIÓN MÓVIL IPHONE 16 PRO */
+    @media (max-width: 430px) {
+        .hero-image {
+            height: 50vh;
+            min-height: 350px;
         }
         
-        .btn-volver {
-            background: #f5f5f5;
-            color: #1a1a1a;
-            border: 1px solid #e0e0e0;
-            padding: 12px 28px;
-            border-radius: 50px;
-            font-size: 0.95em;
-            font-weight: 600;
-            cursor: pointer;
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
-        }
-        .btn-volver:hover {
-            background: #e8e8e8;
-            transform: translateY(-2px);
-        }
+        .casas-container { padding: 30px 16px; }
+        .casa-img { height: 250px; }
+        .casa-info { padding: 24px; }
+        .casa-info h2 { font-size: 1.5em; }
         
-        .calendario-card {
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 24px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            border: 1px solid #f0f0f0;
-        }
-        .calendario-header {
-            text-align: center;
-            margin-bottom: 24px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #f0f0f0;
-        }
-        .calendario-header h2 {
-            color: #1a1a1a;
-            font-size: 2em;
-            margin-bottom: 8px;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-        }
+        .calendario-container { padding: 16px; }
+        .calendario-card { padding: 18px; }
+        .calendario-header { margin-bottom: 20px; }
+        .calendario-header h2 { font-size: 1.5em; }
         
-        .mes-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            gap: 12px;
-        }
-        .mes-nav button {
-            background: #1a1a1a;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 0.9em;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
-            flex-shrink: 0;
-        }
-        .mes-nav button:hover {
-            background: #333;
-        }
-        .mes-titulo {
-            font-size: 1.4em;
-            font-weight: 600;
-            color: #1a1a1a;
-            text-align: center;
-            letter-spacing: -0.02em;
-        }
-        
-        .dias-grid {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 8px;
-            margin-top: 20px;
-        }
-        .dia-header {
-            text-align: center;
-            font-weight: 600;
-            padding: 10px 4px;
-            background: #1a1a1a;
-            color: white;
-            border-radius: 8px;
-            font-size: 0.8em;
-            letter-spacing: 0.02em;
-        }
-        .dia {
-            text-align: center;
-            padding: 12px 4px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            cursor: pointer;
-            min-height: 60px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            transition: all 0.2s ease;
-            background: #ffffff;
-        }
-        .dia.disponible {
-            background: #f5f5f5;
-            border-color: #1a1a1a;
-        }
-        .dia.disponible:hover {
-            background: #e8e8e8;
-            transform: scale(1.05);
-            border-width: 3px;
-        }
-        .dia.ocupado {
-            background: #ffebee;
-            border-color: #ef5350;
-            cursor: not-allowed;
-            opacity: 0.6;
-        }
-        .dia.pasado {
-            background: #fafafa;
-            color: #bdbdbd;
-            cursor: not-allowed;
-            border-color: #f0f0f0;
-        }
-        .dia.seleccionado {
-            background: #1a1a1a !important;
-            color: white !important;
-            border-color: #000 !important;
-            border-width: 3px !important;
-            font-weight: 600;
-        }
-        .dia-numero {
-            font-size: 1.2em;
-            font-weight: 600;
-            margin-bottom: 3px;
-        }
-        .dia-estado {
-            font-size: 0.65em;
-            text-transform: uppercase;
-            font-weight: 500;
-            letter-spacing: 0.03em;
-        }
-        
-        .leyenda {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-        .leyenda-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
+        .mes-titulo { font-size: 1.2em; }
+        .mes-nav button { 
+            padding: 10px 18px;
             font-size: 0.85em;
-            font-weight: 500;
-            color: #666;
-        }
-        .color-box {
-            width: 22px;
-            height: 22px;
-            border-radius: 5px;
-            border: 2px solid #e0e0e0;
         }
         
-        .instruccion-seleccion {
-            text-align: center;
-            padding: 14px;
-            background: #f5f5f5;
-            border-radius: 10px;
-            margin: 20px 0;
-            font-size: 0.9em;
-            color: #666;
-            font-weight: 500;
-            border: 1px solid #e0e0e0;
+        .dias-grid { gap: 6px; }
+        .dia { 
+            min-height: 54px;
+            padding: 10px 3px;
+        }
+        .dia-numero { font-size: 1.1em; }
+        .dia-estado { font-size: 0.6em; }
+        .dia-header { 
+            font-size: 0.75em;
+            padding: 8px 3px;
         }
         
-        .fechas-seleccionadas-container {
-            display: none;
-            margin: 24px 0;
+        .fechas-seleccionadas { 
+            font-size: 1.1em;
+            padding: 16px;
         }
-        .fechas-seleccionadas-container.mostrar {
-            display: block;
+        .boton-whatsapp { 
+            font-size: 1.05em;
+            padding: 14px 32px;
         }
-        .fechas-seleccionadas {
-            text-align: center;
-            font-size: 1.2em;
-            color: #1a1a1a;
-            font-weight: 600;
-            background: #f5f5f5;
-            padding: 18px;
-            border-radius: 12px;
-            margin-bottom: 16px;
-            letter-spacing: -0.01em;
-            border: 2px solid #e0e0e0;
+        .instruccion-seleccion { font-size: 0.85em; }
+    }
+    
+    @media (max-width: 375px) {
+        .dias-grid { gap: 4px; }
+        .dia { 
+            min-height: 50px;
+            padding: 8px 2px;
         }
-        .btn-limpiar {
-            background: #ffffff;
-            color: #666;
-            border: 2px solid #e0e0e0;
-            padding: 12px 28px;
-            border-radius: 50px;
-            font-size: 0.9em;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
-            display: block;
-            margin: 0 auto 16px;
-        }
-        .btn-limpiar:hover {
-            background: #f5f5f5;
-            border-color: #999;
-        }
-        
-        .boton-whatsapp {
-            background: #25D366;
-            color: white;
-            border: none;
-            padding: 16px 40px;
-            font-size: 1.15em;
-            border-radius: 50px;
-            cursor: pointer;
-            display: none;
-            margin: 0 auto;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-            font-family: 'Inter', sans-serif;
-        }
-        .boton-whatsapp:hover {
-            background: #20ba5a;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-        }
-        .boton-whatsapp.mostrar { display: block; }
-        
-        /* OPTIMIZACIÓN MÓVIL IPHONE 16 PRO */
-        @media (max-width: 430px) {
-            .hero-image {
-                height: 50vh;
-                min-height: 350px;
-            }
-            
-            .casas-container { padding: 30px 16px; }
-            .casa-img { height: 250px; }
-            .casa-info { padding: 24px; }
-            .casa-info h2 { font-size: 1.5em; }
-            
-            .calendario-container { padding: 16px; }
-            .calendario-card { padding: 18px; }
-            .calendario-header { margin-bottom: 20px; }
-            .calendario-header h2 { font-size: 1.5em; }
-            
-            .mes-titulo { font-size: 1.2em; }
-            .mes-nav button { 
-                padding: 10px 18px;
-                font-size: 0.85em;
-            }
-            
-            .dias-grid { gap: 6px; }
-            .dia { 
-                min-height: 54px;
-                padding: 10px 3px;
-            }
-            .dia-numero { font-size: 1.1em; }
-            .dia-estado { font-size: 0.6em; }
-            .dia-header { 
-                font-size: 0.75em;
-                padding: 8px 3px;
-            }
-            
-            .fechas-seleccionadas { 
-                font-size: 1.1em;
-                padding: 16px;
-            }
-            .boton-whatsapp { 
-                font-size: 1.05em;
-                padding: 14px 32px;
-            }
-            .instruccion-seleccion { font-size: 0.85em; }
-        }
-        
-        @media (max-width: 375px) {
-            .dias-grid { gap: 4px; }
-            .dia { 
-                min-height: 50px;
-                padding: 8px 2px;
-            }
-            .dia-numero { font-size: 1em; }
-            .dia-estado { font-size: 0.55em; }
-        }
-    </style>
+        .dia-numero { font-size: 1em; }
+        .dia-estado { font-size: 0.55em; }
+    }
+</style>
+```
+
 </head>
 <body>
     <!-- PÁGINA DE SELECCIÓN -->
     <div class="selector-page" id="selectorPage">
         <div class="hero-image" id="heroImage"></div>
-        
-        <div class="casas-container">
-            <div class="casa-card" onclick="mostrarCalendario()">
-                <div class="casa-img" id="imgCasita"></div>
-                <div class="casa-info">
-                    <h2>Casita Carbón</h2>
-                    <button class="btn-reservar">Reserva tu hospedaje</button>
-                </div>
+
+```
+    <div class="casas-container">
+        <div class="casa-card" onclick="mostrarCalendario()">
+            <div class="casa-img" id="imgCasita"></div>
+            <div class="casa-info">
+                <h2>Casita Carbón</h2>
+                <button class="btn-reservar">Reserva tu hospedaje</button>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- PÁGINA DE CALENDARIO -->
-    <div class="calendario-page" id="calendarioPage">
-        <div class="calendario-container">
-            <button class="btn-volver" onclick="volverASelector()">← Volver</button>
+<!-- PÁGINA DE CALENDARIO -->
+<div class="calendario-page" id="calendarioPage">
+    <div class="calendario-container">
+        <button class="btn-volver" onclick="volverASelector()">← Volver</button>
+        
+        <div class="calendario-card">
+            <div class="calendario-header">
+                <h2>Casita Carbón</h2>
+            </div>
             
-            <div class="calendario-card">
-                <div class="calendario-header">
-                    <h2>Casita Carbón</h2>
+            <div class="instruccion-seleccion">
+                📅 Tocá las fechas que querés reservar
+            </div>
+            
+            <div class="mes-nav">
+                <button onclick="mesPrevio()">← Ant.</button>
+                <div class="mes-titulo" id="mesTitulo"></div>
+                <button onclick="mesSiguiente()">Sig. →</button>
+            </div>
+            
+            <div class="dias-grid" id="calendario"></div>
+            
+            <div class="leyenda">
+                <div class="leyenda-item">
+                    <div class="color-box" style="background: #f5f5f5; border-color: #1a1a1a;"></div>
+                    <span>Disponible</span>
                 </div>
-                
-                <div class="instruccion-seleccion">
-                    📅 Tocá las fechas que querés reservar
+                <div class="leyenda-item">
+                    <div class="color-box" style="background: #ffebee; border-color: #ef5350;"></div>
+                    <span>Ocupado</span>
                 </div>
-                
-                <div class="mes-nav">
-                    <button onclick="mesPrevio()">← Ant.</button>
-                    <div class="mes-titulo" id="mesTitulo"></div>
-                    <button onclick="mesSiguiente()">Sig. →</button>
-                </div>
-                
-                <div class="dias-grid" id="calendario"></div>
-                
-                <div class="leyenda">
-                    <div class="leyenda-item">
-                        <div class="color-box" style="background: #f5f5f5; border-color: #1a1a1a;"></div>
-                        <span>Disponible</span>
-                    </div>
-                    <div class="leyenda-item">
-                        <div class="color-box" style="background: #ffebee; border-color: #ef5350;"></div>
-                        <span>Ocupado</span>
-                    </div>
-                </div>
-                
-                <div class="fechas-seleccionadas-container" id="fechasContainer">
-                    <div class="fechas-seleccionadas" id="fechasSeleccionadas"></div>
-                    <button class="btn-limpiar" onclick="limpiarSeleccion()">🗑️ Limpiar selección</button>
-                    <button class="boton-whatsapp" id="botonWhatsApp" onclick="irAWhatsApp()">
-                        💬 Reservar por WhatsApp
-                    </button>
-                </div>
+            </div>
+            
+            <div class="fechas-seleccionadas-container" id="fechasContainer">
+                <div class="fechas-seleccionadas" id="fechasSeleccionadas"></div>
+                <button class="btn-limpiar" onclick="limpiarSeleccion()">🗑️ Limpiar selección</button>
+                <button class="boton-whatsapp" id="botonWhatsApp" onclick="irAWhatsApp()">
+                    💬 Reservar por WhatsApp
+                </button>
             </div>
         </div>
     </div>
+</div>
 
-    <script>
-        // ═══════════════════════════════════════════════════════════════
-        // 📋 CONFIGURACIÓN - SUPER FÁCIL DE ACTUALIZAR
-        // ═══════════════════════════════════════════════════════════════
+<script>
+    // ═══════════════════════════════════════════════════════════════
+    // 📋 CONFIGURACIÓN - SUPER FÁCIL DE ACTUALIZAR
+    // ═══════════════════════════════════════════════════════════════
+    
+    const MI_WHATSAPP = '5493517710958';
+    
+    // ────────────────────────────────────────────────────────────
+    // 📅 FECHAS OCUPADAS DE CASITA CARBÓN
+    // ────────────────────────────────────────────────────────────
+    // 
+    // INSTRUCCIONES:
+    // 1. Para agregar una fecha: agrega '2026-03-20', (con coma al final)
+    // 2. Para quitar una fecha: borra la línea completa
+    // 3. Formato: 'AÑO-MES-DÍA' (siempre con comillas y coma)
+    // 4. Ejemplo: 15 de marzo 2026 → '2026-03-15',
+    //
+    // TIP: Ordenalas por mes para encontrarlas más fácil
+    // ────────────────────────────────────────────────────────────
+    
+    const CASITA_CARBON_OCUPADAS = [
+        // FEBRERO 2026 - TODO EL MES OCUPADO
+        '2026-02-01', '2026-02-02', '2026-02-03', '2026-02-04', '2026-02-05', 
+        '2026-02-06', '2026-02-07', '2026-02-08', '2026-02-09', '2026-02-10',
+        '2026-02-11', '2026-02-12', '2026-02-13', '2026-02-14', '2026-02-15',
+        '2026-02-16', '2026-02-17', '2026-02-18', '2026-02-19', '2026-02-20',
+        '2026-02-21', '2026-02-22', '2026-02-23', '2026-02-24', '2026-02-25',
+        '2026-02-26', '2026-02-27', '2026-02-28',
         
-        const MI_WHATSAPP = '5493517710958';
+        // MARZO 2026 - Del 1 al 8
+        '2026-03-01',
+        '2026-03-02',
+        '2026-03-03',
+        '2026-03-04',
+        '2026-03-05',
+        '2026-03-06',
+        '2026-03-07',
+        '2026-03-08',
         
-        // ────────────────────────────────────────────────────────────
-        // 📅 FECHAS OCUPADAS DE CASITA CARBÓN
-        // ────────────────────────────────────────────────────────────
-        // 
-        // INSTRUCCIONES:
-        // 1. Para agregar una fecha: agrega '2026-03-20', (con coma al final)
-        // 2. Para quitar una fecha: borra la línea completa
-        // 3. Formato: 'AÑO-MES-DÍA' (siempre con comillas y coma)
-        // 4. Ejemplo: 15 de marzo 2026 → '2026-03-15',
-        //
-        // TIP: Ordenalas por mes para encontrarlas más fácil
-        // ────────────────────────────────────────────────────────────
+        // MARZO 2026 - Del 13 al 15
+        '2026-03-13',
+        '2026-03-14',
+        '2026-03-15',
         
-        const CASITA_CARBON_OCUPADAS = [
-            // FEBRERO 2026 - TODO EL MES OCUPADO
-            '2026-02-01', '2026-02-02', '2026-02-03', '2026-02-04', '2026-02-05', 
-            '2026-02-06', '2026-02-07', '2026-02-08', '2026-02-09', '2026-02-10',
-            '2026-02-11', '2026-02-12', '2026-02-13', '2026-02-14', '2026-02-15',
-            '2026-02-16', '2026-02-17', '2026-02-18', '2026-02-19', '2026-02-20',
-            '2026-02-21', '2026-02-22', '2026-02-23', '2026-02-24', '2026-02-25',
-            '2026-02-26', '2026-02-27', '2026-02-28',
-            
-            // MARZO 2026 - Del 1 al 8
-            '2026-03-01',
-            '2026-03-02',
-            '2026-03-03',
-            '2026-03-04',
-            '2026-03-05',
-            '2026-03-06',
-            '2026-03-07',
-            '2026-03-08',
-            
-            // MARZO 2026 - Del 13 al 15
-            '2026-03-13',
-            '2026-03-14',
-            '2026-03-15',
-            
-            // ────────────────────────────────────────────────────────
-            // 👇 AGREGA NUEVAS FECHAS AQUÍ ABAJO 👇
-            // ────────────────────────────────────────────────────────
-            // Ejemplo de cómo agregar:
-            // '2026-04-20',  ← 20 de abril
-            // '2026-04-21',  ← 21 de abril
-            // '2026-04-22',  ← 22 de abril
-            
-        ];
+        // ────────────────────────────────────────────────────────
+        // 👇 AGREGA NUEVAS FECHAS AQUÍ ABAJO 👇
+        // ────────────────────────────────────────────────────────
+        // Ejemplo de cómo agregar:
+        // '2026-04-20',  ← 20 de abril
+        // '2026-04-21',  ← 21 de abril
+        // '2026-04-22',  ← 22 de abril
         
-        // ═══════════════════════════════════════════════════════════════
-        // ⚠️ NO MODIFIQUES NADA DEBAJO DE ESTA LÍNEA ⚠️
-        // ═══════════════════════════════════════════════════════════════
-        
-        let mesActual = new Date();
-        let fechasElegidas = [];
-        const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
-                       'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-        const dias = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+    ];
+    
+    // ═══════════════════════════════════════════════════════════════
+    // ⚠️ NO MODIFIQUES NADA DEBAJO DE ESTA LÍNEA ⚠️
+    // ═══════════════════════════════════════════════════════════════
+    
+    let mesActual = new Date();
+    let fechasElegidas = [];
+    const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
+                   'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    const dias = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
 
-        window.onload = function() {
-            document.getElementById('heroImage').style.backgroundImage = 
-                'url(https://raw.githubusercontent.com/casitacarbon/Casitacarbon/main/imagenes/hero-familia-carbon.jpg)';
-            document.getElementById('imgCasita').style.backgroundImage = 
-                'url(https://raw.githubusercontent.com/casitacarbon/Casitacarbon/main/imagenes/casita-carbon.jpg)';
-        };
+    window.onload = function() {
+        document.getElementById('heroImage').style.backgroundImage = 
+            'url(https://raw.githubusercontent.com/casitacarbon/Casitacarbon/main/imágenes/hero-familia-carbon.jpg)';
+        document.getElementById('imgCasita').style.backgroundImage = 
+            'url(https://raw.githubusercontent.com/casitacarbon/Casitacarbon/main/imágenes/casita-carbon.jpg)';
+    };
 
-        function mostrarCalendario() {
-            fechasElegidas = [];
-            document.getElementById('selectorPage').classList.add('oculto');
-            document.getElementById('calendarioPage').classList.add('activo');
-            mesActual = new Date();
-            renderizarCalendario();
-            actualizarVistaFechasSeleccionadas();
+    function mostrarCalendario() {
+        fechasElegidas = [];
+        document.getElementById('selectorPage').classList.add('oculto');
+        document.getElementById('calendarioPage').classList.add('activo');
+        mesActual = new Date();
+        renderizarCalendario();
+        actualizarVistaFechasSeleccionadas();
+    }
+
+    function volverASelector() {
+        document.getElementById('calendarioPage').classList.remove('activo');
+        document.getElementById('selectorPage').classList.remove('oculto');
+        limpiarSeleccion();
+    }
+
+    function renderizarCalendario() {
+        const cal = document.getElementById('calendario');
+        const titulo = document.getElementById('mesTitulo');
+        cal.innerHTML = '';
+        
+        const año = mesActual.getFullYear();
+        const mes = mesActual.getMonth();
+        titulo.textContent = meses[mes] + ' ' + año;
+        
+        dias.forEach(d => {
+            const header = document.createElement('div');
+            header.className = 'dia-header';
+            header.textContent = d;
+            cal.appendChild(header);
+        });
+        
+        const primerDia = new Date(año, mes, 1).getDay();
+        const diasEnMes = new Date(año, mes + 1, 0).getDate();
+        const hoy = new Date();
+        hoy.setHours(0, 0, 0, 0);
+        
+        for (let i = 0; i < primerDia; i++) {
+            const vacio = document.createElement('div');
+            vacio.className = 'dia pasado';
+            cal.appendChild(vacio);
         }
-
-        function volverASelector() {
-            document.getElementById('calendarioPage').classList.remove('activo');
-            document.getElementById('selectorPage').classList.remove('oculto');
-            limpiarSeleccion();
-        }
-
-        function renderizarCalendario() {
-            const cal = document.getElementById('calendario');
-            const titulo = document.getElementById('mesTitulo');
-            cal.innerHTML = '';
+        
+        for (let dia = 1; dia <= diasEnMes; dia++) {
+            const diaEl = document.createElement('div');
+            diaEl.className = 'dia';
+            const fecha = new Date(año, mes, dia);
+            const fechaStr = fecha.toISOString().split('T')[0];
             
-            const año = mesActual.getFullYear();
-            const mes = mesActual.getMonth();
-            titulo.textContent = meses[mes] + ' ' + año;
+            const esPasado = fecha < hoy;
+            const estaOcupado = CASITA_CARBON_OCUPADAS.includes(fechaStr);
+            const estaSeleccionado = fechasElegidas.includes(fechaStr);
             
-            dias.forEach(d => {
-                const header = document.createElement('div');
-                header.className = 'dia-header';
-                header.textContent = d;
-                cal.appendChild(header);
-            });
-            
-            const primerDia = new Date(año, mes, 1).getDay();
-            const diasEnMes = new Date(año, mes + 1, 0).getDate();
-            const hoy = new Date();
-            hoy.setHours(0, 0, 0, 0);
-            
-            for (let i = 0; i < primerDia; i++) {
-                const vacio = document.createElement('div');
-                vacio.className = 'dia pasado';
-                cal.appendChild(vacio);
-            }
-            
-            for (let dia = 1; dia <= diasEnMes; dia++) {
-                const diaEl = document.createElement('div');
-                diaEl.className = 'dia';
-                const fecha = new Date(año, mes, dia);
-                const fechaStr = fecha.toISOString().split('T')[0];
-                
-                const esPasado = fecha < hoy;
-                const estaOcupado = CASITA_CARBON_OCUPADAS.includes(fechaStr);
-                const estaSeleccionado = fechasElegidas.includes(fechaStr);
-                
-                if (esPasado) {
-                    diaEl.classList.add('pasado');
-                    diaEl.innerHTML = '<div class="dia-numero">' + dia + '</div>';
-                } else if (estaOcupado) {
-                    diaEl.classList.add('ocupado');
-                    diaEl.innerHTML = '<div class="dia-numero">' + dia + '</div><div class="dia-estado">Ocupado</div>';
-                } else {
-                    diaEl.classList.add('disponible');
-                    if (estaSeleccionado) {
-                        diaEl.classList.add('seleccionado');
-                    }
-                    diaEl.innerHTML = '<div class="dia-numero">' + dia + '</div><div class="dia-estado">Libre</div>';
-                    diaEl.onclick = () => toggleFecha(fechaStr);
+            if (esPasado) {
+                diaEl.classList.add('pasado');
+                diaEl.innerHTML = '<div class="dia-numero">' + dia + '</div>';
+            } else if (estaOcupado) {
+                diaEl.classList.add('ocupado');
+                diaEl.innerHTML = '<div class="dia-numero">' + dia + '</div><div class="dia-estado">Ocupado</div>';
+            } else {
+                diaEl.classList.add('disponible');
+                if (estaSeleccionado) {
+                    diaEl.classList.add('seleccionado');
                 }
-                
-                cal.appendChild(diaEl);
-            }
-        }
-
-        function toggleFecha(fechaStr) {
-            const index = fechasElegidas.indexOf(fechaStr);
-            if (index > -1) {
-                fechasElegidas.splice(index, 1);
-            } else {
-                fechasElegidas.push(fechaStr);
-            }
-            fechasElegidas.sort();
-            renderizarCalendario();
-            actualizarVistaFechasSeleccionadas();
-        }
-
-        function actualizarVistaFechasSeleccionadas() {
-            const container = document.getElementById('fechasContainer');
-            const texto = document.getElementById('fechasSeleccionadas');
-            const boton = document.getElementById('botonWhatsApp');
-            
-            if (fechasElegidas.length === 0) {
-                container.classList.remove('mostrar');
-                return;
+                diaEl.innerHTML = '<div class="dia-numero">' + dia + '</div><div class="dia-estado">Libre</div>';
+                diaEl.onclick = () => toggleFecha(fechaStr);
             }
             
-            container.classList.add('mostrar');
-            
-            const fechasOrdenadas = fechasElegidas.map(f => new Date(f + 'T12:00:00')).sort((a, b) => a - b);
-            
-            if (fechasElegidas.length === 1) {
-                const fecha = fechasOrdenadas[0];
-                texto.textContent = '✅ ' + fecha.getDate() + ' de ' + meses[fecha.getMonth()] + ' de ' + fecha.getFullYear();
-            } else {
-                const primera = fechasOrdenadas[0];
-                const ultima = fechasOrdenadas[fechasOrdenadas.length - 1];
-                texto.textContent = '✅ Del ' + primera.getDate() + ' al ' + ultima.getDate() + ' de ' + meses[primera.getMonth()] + ' (' + fechasElegidas.length + ' noches)';
-            }
-            
-            boton.classList.add('mostrar');
+            cal.appendChild(diaEl);
         }
+    }
 
-        function limpiarSeleccion() {
-            fechasElegidas = [];
-            renderizarCalendario();
-            actualizarVistaFechasSeleccionadas();
+    function toggleFecha(fechaStr) {
+        const index = fechasElegidas.indexOf(fechaStr);
+        if (index > -1) {
+            fechasElegidas.splice(index, 1);
+        } else {
+            fechasElegidas.push(fechaStr);
         }
+        fechasElegidas.sort();
+        renderizarCalendario();
+        actualizarVistaFechasSeleccionadas();
+    }
 
-        function irAWhatsApp() {
-            if (fechasElegidas.length === 0) return;
-            
-            const fechasOrdenadas = fechasElegidas.map(f => new Date(f + 'T12:00:00')).sort((a, b) => a - b);
-            
-            let mensaje;
-            if (fechasElegidas.length === 1) {
-                const fecha = fechasOrdenadas[0];
-                const textoFecha = fecha.getDate() + '/' + (fecha.getMonth() + 1) + '/' + fecha.getFullYear();
-                mensaje = 'Hola! Quiero reservar Casita Carbón para el ' + textoFecha;
-            } else {
-                const primera = fechasOrdenadas[0];
-                const ultima = fechasOrdenadas[fechasOrdenadas.length - 1];
-                const textoInicio = primera.getDate() + '/' + (primera.getMonth() + 1) + '/' + primera.getFullYear();
-                const textoFin = ultima.getDate() + '/' + (ultima.getMonth() + 1) + '/' + ultima.getFullYear();
-                mensaje = 'Hola! Quiero reservar Casita Carbón del ' + textoInicio + ' al ' + textoFin + ' (' + fechasElegidas.length + ' noches)';
-            }
-            
-            window.open('https://wa.me/' + MI_WHATSAPP + '?text=' + encodeURIComponent(mensaje), '_blank');
+    function actualizarVistaFechasSeleccionadas() {
+        const container = document.getElementById('fechasContainer');
+        const texto = document.getElementById('fechasSeleccionadas');
+        const boton = document.getElementById('botonWhatsApp');
+        
+        if (fechasElegidas.length === 0) {
+            container.classList.remove('mostrar');
+            return;
         }
+        
+        container.classList.add('mostrar');
+        
+        const fechasOrdenadas = fechasElegidas.map(f => new Date(f + 'T12:00:00')).sort((a, b) => a - b);
+        
+        if (fechasElegidas.length === 1) {
+            const fecha = fechasOrdenadas[0];
+            texto.textContent = '✅ ' + fecha.getDate() + ' de ' + meses[fecha.getMonth()] + ' de ' + fecha.getFullYear();
+        } else {
+            const primera = fechasOrdenadas[0];
+            const ultima = fechasOrdenadas[fechasOrdenadas.length - 1];
+            texto.textContent = '✅ Del ' + primera.getDate() + ' al ' + ultima.getDate() + ' de ' + meses[primera.getMonth()] + ' (' + fechasElegidas.length + ' noches)';
+        }
+        
+        boton.classList.add('mostrar');
+    }
 
-        function mesPrevio() {
-            mesActual.setMonth(mesActual.getMonth() - 1);
-            renderizarCalendario();
-        }
+    function limpiarSeleccion() {
+        fechasElegidas = [];
+        renderizarCalendario();
+        actualizarVistaFechasSeleccionadas();
+    }
 
-        function mesSiguiente() {
-            mesActual.setMonth(mesActual.getMonth() + 1);
-            renderizarCalendario();
+    function irAWhatsApp() {
+        if (fechasElegidas.length === 0) return;
+        
+        const fechasOrdenadas = fechasElegidas.map(f => new Date(f + 'T12:00:00')).sort((a, b) => a - b);
+        
+        let mensaje;
+        if (fechasElegidas.length === 1) {
+            const fecha = fechasOrdenadas[0];
+            const textoFecha = fecha.getDate() + '/' + (fecha.getMonth() + 1) + '/' + fecha.getFullYear();
+            mensaje = 'Hola! Quiero reservar Casita Carbón para el ' + textoFecha;
+        } else {
+            const primera = fechasOrdenadas[0];
+            const ultima = fechasOrdenadas[fechasOrdenadas.length - 1];
+            const textoInicio = primera.getDate() + '/' + (primera.getMonth() + 1) + '/' + primera.getFullYear();
+            const textoFin = ultima.getDate() + '/' + (ultima.getMonth() + 1) + '/' + ultima.getFullYear();
+            mensaje = 'Hola! Quiero reservar Casita Carbón del ' + textoInicio + ' al ' + textoFin + ' (' + fechasElegidas.length + ' noches)';
         }
-    </script>
+        
+        window.open('https://wa.me/' + MI_WHATSAPP + '?text=' + encodeURIComponent(mensaje), '_blank');
+    }
+
+    function mesPrevio() {
+        mesActual.setMonth(mesActual.getMonth() - 1);
+        renderizarCalendario();
+    }
+
+    function mesSiguiente() {
+        mesActual.setMonth(mesActual.getMonth() + 1);
+        renderizarCalendario();
+    }
+</script>
+```
+
 </body>
 </html>
